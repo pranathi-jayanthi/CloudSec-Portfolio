@@ -45,31 +45,10 @@ const HeroSection = () => {
             <span className="text-muted-foreground italic">No hype, just hands-on learning and implementation.</span>
           </p>
 
-          {/* Stats row */}
-          <div className="flex flex-wrap gap-6 pt-6 border-t border-border/50">
-            <Stat label="Years in Tech" value="4+" accent="phosphor" />
-            <Stat label="National Wins" value="3" accent="violet" />
-            <Stat label="B.Tech CGPA" value="9.01" accent="phosphor" />
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground">
-          <span className="font-mono text-xs">scroll</span>
-          <div className="w-px h-8 bg-gradient-to-b from-phosphor/50 to-transparent animate-pulse" />
         </div>
       </div>
     </section>
   );
 };
-
-const Stat = ({ label, value, accent }: { label: string; value: string; accent: 'phosphor' | 'violet' }) => (
-  <div className="flex flex-col">
-    <span className={`text-3xl font-bold font-mono ${accent === 'phosphor' ? 'text-phosphor' : 'text-violet'}`}>
-      {value}
-    </span>
-    <span className="text-sm text-muted-foreground">{label}</span>
-  </div>
-);
 
 export default HeroSection;
