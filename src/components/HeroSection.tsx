@@ -40,18 +40,21 @@ const HeroSection = () => {
           </h1>
           
           {/* Bio */}
-          <p className="text-lg md:text-xl text-secondary-foreground max-w-2xl">
-            Exploring Cloud Security | ISC2 CC | Cybersecurity Risk Assessor @HP Inc | Graduate @SRM AP | AI ML | Cybersecurity | Web Dev
+          <p className="text-base md:text-lg text-secondary-foreground max-w-2xl font-mono">
+            <span className="text-phosphor">Exploring Cloud Security</span>
+            <span className="text-muted-foreground"> | </span>
+            <span>ISC2 Certified in Cybersecurity</span>
+            <span className="text-muted-foreground"> | </span>
+            <span className="text-violet">Cybersecurity Risk Assessor @HP Inc</span>
+            <span className="text-muted-foreground"> | </span>
+            <span>B. Tech CSE - AI ML Graduate @SRM AP</span>
+            <span className="text-muted-foreground"> | </span>
+            <span className="text-phosphor">Cybersecurity</span>
+            <span className="text-muted-foreground"> | </span>
+            <span className="text-violet">AI ML</span>
+            <span className="text-muted-foreground"> | </span>
+            <span>Web Development</span>
           </p>
-
-          <div className="flex flex-wrap justify-center items-center gap-3 font-mono text-sm">
-            <span className="px-3 py-1.5 bg-phosphor/10 border border-phosphor/30 rounded-md text-phosphor">
-              Cybersecurity @ HP
-            </span>
-            <span className="px-3 py-1.5 bg-violet/10 border border-violet/30 rounded-md text-violet">
-              B.Tech AI & ML Graduate
-            </span>
-          </div>
 
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl leading-relaxed">
             Started in Cybersecurity through TPRM, where I developed a{' '}
