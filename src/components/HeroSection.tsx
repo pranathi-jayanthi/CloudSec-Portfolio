@@ -1,4 +1,5 @@
 import { Terminal, ChevronRight } from 'lucide-react';
+import profilePicture from '@/assets/profile-picture.png';
 
 const HeroSection = () => {
   return (
@@ -23,10 +24,26 @@ const HeroSection = () => {
 
         {/* Main content */}
         <div className="space-y-6">
+          {/* Profile Picture */}
+          <div className="relative w-32 h-32 md:w-40 md:h-40">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-phosphor to-violet opacity-50 blur-md" />
+            <img 
+              src={profilePicture} 
+              alt="Pranathi Jayanthi" 
+              className="relative w-full h-full rounded-full object-cover border-2 border-phosphor/50"
+            />
+          </div>
+
+          {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             <span className="text-gradient">Pranathi Jayanthi</span>
           </h1>
           
+          {/* Bio */}
+          <p className="text-lg md:text-xl text-secondary-foreground max-w-2xl">
+            Exploring Cloud Security | ISC2 CC | Cybersecurity Risk Assessor @HP Inc | Graduate @SRM AP | AI ML | Cybersecurity | Web Dev
+          </p>
+
           <div className="flex flex-wrap items-center gap-3 font-mono text-sm">
             <span className="px-3 py-1.5 bg-phosphor/10 border border-phosphor/30 rounded-md text-phosphor">
               Cybersecurity @ HP
@@ -36,7 +53,7 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <p className="text-lg md:text-xl text-secondary-foreground max-w-2xl leading-relaxed">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl leading-relaxed">
             Started in Cybersecurity through TPRM, where I developed a{' '}
             <span className="text-phosphor font-medium">risk-first mindset</span>. Now, I'm getting back 
             to my roots in code—applying my Python background to{' '}
