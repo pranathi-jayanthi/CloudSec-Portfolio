@@ -11,27 +11,27 @@ const HeroSection = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-phosphor/10 rounded-full blur-[128px] animate-pulse-glow" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet/10 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: '1s' }} />
       
-      <div className="relative z-10 max-w-4xl mx-auto">
-        {/* Terminal header */}
-        <div className="flex items-center gap-2 mb-6 font-mono text-sm text-muted-foreground">
-          <Terminal className="w-4 h-4 text-phosphor" />
-          <span className="text-phosphor">~/</span>
-          <span>portfolio</span>
-          <ChevronRight className="w-3 h-3" />
-          <span className="text-violet">init</span>
-          <span className="terminal-cursor ml-1 w-2 h-4 bg-phosphor inline-block" />
-        </div>
-
+      <div className="relative z-10 max-w-4xl mx-auto text-center">
         {/* Main content */}
-        <div className="space-y-6">
+        <div className="space-y-6 flex flex-col items-center">
           {/* Profile Picture */}
-          <div className="relative w-32 h-32 md:w-40 md:h-40">
+          <div className="relative w-36 h-36 md:w-44 md:h-44">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-phosphor to-violet opacity-50 blur-md" />
             <img 
               src={profilePicture} 
               alt="Pranathi Jayanthi" 
               className="relative w-full h-full rounded-full object-cover border-2 border-phosphor/50"
             />
+          </div>
+
+          {/* Terminal header - now under picture */}
+          <div className="flex items-center gap-2 font-mono text-sm text-muted-foreground">
+            <Terminal className="w-4 h-4 text-phosphor" />
+            <span className="text-phosphor">~/</span>
+            <span>portfolio</span>
+            <ChevronRight className="w-3 h-3" />
+            <span className="text-violet">init</span>
+            <span className="terminal-cursor ml-1 w-2 h-4 bg-phosphor inline-block" />
           </div>
 
           {/* Name */}
@@ -44,7 +44,7 @@ const HeroSection = () => {
             Exploring Cloud Security | ISC2 CC | Cybersecurity Risk Assessor @HP Inc | Graduate @SRM AP | AI ML | Cybersecurity | Web Dev
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 font-mono text-sm">
+          <div className="flex flex-wrap justify-center items-center gap-3 font-mono text-sm">
             <span className="px-3 py-1.5 bg-phosphor/10 border border-phosphor/30 rounded-md text-phosphor">
               Cybersecurity @ HP
             </span>
