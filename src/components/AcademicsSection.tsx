@@ -3,7 +3,7 @@ import { GraduationCap, TrendingUp } from 'lucide-react';
 const academics = [
   {
     level: "10th Standard",
-    score: "10/10",
+    score: "10.00",
     label: "CGPA",
     institution: "CBSE",
   },

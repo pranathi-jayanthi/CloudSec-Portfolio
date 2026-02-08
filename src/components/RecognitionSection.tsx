@@ -63,10 +63,10 @@ const RecognitionSection = () => {
         <div className="mb-12 text-left">
           <div className="inline-flex items-center gap-3 mb-4">
             <Star className="w-4 h-4 text-violet" />
-            <span className="font-mono text-sm text-violet uppercase tracking-wider">Achievements & Extracurriculars</span>
+            <span className="font-mono text-sm text-violet uppercase tracking-wider">Proactive Participation</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold">
-            Internal <span className="text-gradient">High-Performance</span>
+            Achievements <span className="text-gradient">& Extracurriculars</span>
           </h2>
         </div>
 
