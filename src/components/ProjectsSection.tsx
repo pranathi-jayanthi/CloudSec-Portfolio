@@ -68,7 +68,7 @@ const ProjectsSection = () => {
 
 const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
   const Icon = project.icon;
-  const accentColor = project.accent === 'phosphor' ? 'phosphor' : 'violet';
+  const accentColor = project.accent;
   
   return (
     <div className="gradient-border card-hover group">
