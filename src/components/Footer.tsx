@@ -14,25 +14,25 @@ const Footer = () => {
               <span className="text-gradient">Let's Connect</span>
             </h3>
             <p className="text-sm text-muted-foreground font-mono">
-              Open to opportunities in Cloud Security & Technical Roles
+              Open to opportunities in Cloud Security...
             </p>
           </div>
 
           {/* Social links */}
           <div className="flex items-center gap-4">
-            <SocialLink icon={Github} href="#" label="GitHub" />
-            <SocialLink icon={Linkedin} href="#" label="LinkedIn" />
-            <SocialLink icon={Mail} href="#" label="Email" />
+            <SocialLink icon={Github} href="https://github.com/pranathi-jayanthi" label="GitHub" />
+            <SocialLink icon={Linkedin} href="https://www.linkedin.com/in/pranathi-jayanthi-b96b97230/" label="LinkedIn" />
+            <SocialLink icon={Mail} href="mailto:jvlpranathi@gmail.com" label="Email" />
           </div>
         </div>
 
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border/30 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground font-mono">
-            <span className="text-phosphor">$</span> echo "Built with passion & precision"
+            <span className="text-phosphor">$</span> echo "Built with passion ❤️"
           </p>
           <p className="text-xs text-muted-foreground font-mono">
-            © 2025 Pranathi Jayanthi
+            © Pranathi Jayanthi
           </p>
         </div>
       </div>

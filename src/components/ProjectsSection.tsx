@@ -1,35 +1,39 @@
-import { Code2, Shield, Brain, ExternalLink, Github } from 'lucide-react';
+import { Code2, Shield, Brain, ExternalLink, Github, Cloud } from 'lucide-react';
+import { Card } from './ui/card';
 
 const projects = [
   {
     id: 1,
-    title: "AWS Security Automation",
-    subtitle: "Python + AWS Integration",
-    description: "Demonstrating Python-AWS integration after a year of governance-focused work. Building automated security workflows and compliance monitoring.",
-    tags: ["Python", "AWS", "Lambda", "CloudWatch"],
-    icon: Code2,
-    status: "In Progress",
-    accent: "phosphor" as const,
+    title: "Detect Public S3 Buckets",
+    subtitle: "Python + AWS",
+    description: "My first Cloud Security Project: AWS lambda function in python to 'Detect Public S3 Buckets' using AWS SDK - Boto3 with least privilege implementation using custom IAM policies",
+    tags: ["Python", "AWS Lambda", "Boto3 AWS SDK"],
+    icon: Cloud,
+    status: "Completed",
+    accent: "violet" as const,
+    githubUrl: "https://github.com/pranathi-jayanthi/AWS-Lambda-to-Detect-Public-S3-Buckets.git",
   },
   {
     id: 2,
-    title: "Android Armour",
-    subtitle: "AI-Driven Security Framework",
-    description: "Scalable AI-driven mobile security framework using FastAPI and AWS. Real-time threat detection with ML-powered analysis.",
-    tags: ["FastAPI", "AWS", "TensorFlow", "Android"],
-    icon: Shield,
-    status: "Active",
+    title: "Quality Control of Brain MRI Registrations",
+    subtitle: "Python + AI ML",
+    description: "Fully Automated Quality Control of Rigid & Affine Registrations of T1w and T2w MRI in big data using Diffusion Models",
+    tags: ["Python", "TensorFlow", "Generative AI"],
+    icon: Brain,
+    status: "Completed",
     accent: "violet" as const,
+    githubUrl: "https://github.com/pranathi-jayanthi/Quality-Control-Of-MRI-Registrations.git",
   },
   {
     id: 3,
-    title: "MRI Anomaly Detection",
-    subtitle: "Medical AI Implementation",
-    description: "High-level Python implementation using Diffusion Models for medical imaging data. Detecting anomalies in MRI scans with state-of-the-art accuracy.",
-    tags: ["Python", "Diffusion Models", "PyTorch", "Medical AI"],
-    icon: Brain,
+    title: "Credit Card Approval Prediction",
+    subtitle: "Python + Machine Learning",
+    description: "Comparing the performance of Supervised Machine Learning algorithms like Logistic Regression, Support Vector Machine and Random Forest for Credit Card Approval Prediction.",
+    tags: ["Python", "Numpy", "Pandas", "ML Algorithms"],
+    icon: Shield,
     status: "Completed",
-    accent: "phosphor" as const,
+    accent: "violet" as const,
+    githubUrl: "https://github.com/pranathi-jayanthi/Credit-Card-Approval-Prediction.git",
   },
 ];
 
@@ -41,13 +45,13 @@ const ProjectsSection = () => {
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-2 h-2 bg-phosphor rounded-full animate-pulse" />
-            <span className="font-mono text-sm text-phosphor uppercase tracking-wider">Active Projects</span>
+            <span className="font-mono text-sm text-phosphor uppercase tracking-wider">Projects Built</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold">
             Proof of <span className="text-gradient">Concept</span>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-xl">
-            Technical projects demonstrating Python expertise applied to security and AI domains.
+            Key projects demonstrating expertise in Python, AWS, Cloud Security and AI ML.
           </p>
         </div>
 
@@ -104,14 +108,16 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
 
         {/* Actions */}
         <div className="flex gap-3 mt-4">
-          <button className="flex items-center gap-2 text-xs font-mono text-muted-foreground hover:text-phosphor transition-colors">
-            <Github className="w-4 h-4" />
-            <span>Code</span>
-          </button>
-          <button className="flex items-center gap-2 text-xs font-mono text-muted-foreground hover:text-violet transition-colors">
-            <ExternalLink className="w-4 h-4" />
-            <span>Demo</span>
-          </button>
+          <a 
+    href={project.githubUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-xs font-mono text-muted-foreground hover:text-phosphor transition-colors group/link"
+  >
+    <Github className="w-4 h-4" />
+    <span>Code</span>
+    <ExternalLink className="w-3 h-3 opacity-0 -ml-1 group-hover/link:opacity-100 transition-opacity" />
+  </a>
         </div>
       </div>
     </div>

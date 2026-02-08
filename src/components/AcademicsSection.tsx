@@ -32,10 +32,10 @@ const AcademicsSection = () => {
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
             <GraduationCap className="w-5 h-5 text-phosphor" />
-            <span className="font-mono text-sm text-phosphor uppercase tracking-wider">Academic Foundation</span>
+            <span className="font-mono text-sm text-phosphor uppercase tracking-wider">Educational Foundation</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold">
-            Consistent <span className="text-gradient">Excellence</span>
+            Academic <span className="text-gradient">Performance</span>
           </h2>
         </div>
 
@@ -54,7 +54,7 @@ const AcademicsSection = () => {
         {/* Trend indicator */}
         <div className="flex items-center justify-center gap-2 mt-8 text-muted-foreground">
           <TrendingUp className="w-4 h-4 text-phosphor" />
-          <span className="font-mono text-sm">Consistent high performance across all levels</span>
+          <span className="font-mono text-sm">Consistent performance across all levels</span>
         </div>
       </div>
     </section>

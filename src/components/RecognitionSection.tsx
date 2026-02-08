@@ -1,29 +1,54 @@
-import { Award, Users, Trophy, Star } from 'lucide-react';
+import { Award, Users, Trophy, Star, Medal, Rocket } from 'lucide-react';
 
 const recognitions = [
   {
-    icon: Users,
-    title: "Alumni Panelist",
-    subtitle: "HP Intern Batch 2026",
-    description: "Selected as 1 of only 6 alumni out of 160+ for mentoring the incoming intern batch.",
-    highlight: "Top 4%",
+    icon: Award,
+    title: "HP Intern Fair Winner",
+    subtitle: "Judge's Choice: Special Mention Prize",
+    description: "Won Judge's Choice - Special Mention Prize at HP India's First Ever Intern Fair for innovative project showcase.",
+    highlight: "Special Mention",
     accent: "phosphor" as const,
   },
   {
-    icon: Award,
-    title: "Judge's Choice",
-    subtitle: "HP India Intern Fair",
-    description: "Special Mention Prize at HP India's First Ever Intern Fair for innovative project showcase.",
-    highlight: "1st Edition",
+    icon: Users,
+    title: "Alumni Panelist",
+    subtitle: "For HP Intern Batch 2026",
+    description: "Honored to be selected as one of only six alumni, out of a pool 160+ alumni, to join the alumni panel for 2026 intern batch.",
+    highlight: "Top 4%",
     accent: "violet" as const,
   },
+
   {
     icon: Trophy,
     title: "SIH Winner",
     subtitle: "Smart India Hackathon",
-    description: "1st Prize at Smart India Hackathon—India's largest national-level hackathon competition.",
-    highlight: "National Level",
+    description: "Our team won 1st Prize at Smart India Hackathon, a national-level hackathon conducted by Govt of India along with a cash prize of ₹1,00,000.",
+    highlight: "First Prize",
     accent: "phosphor" as const,
+  },
+  {
+    icon: Rocket,
+    title: "Pitch Deck Finalist",
+    subtitle: "IIT Madras E-Summit'24",
+    description: "Finalist at prestigious IIT Madras E-Summit'24 Pitch Deck contest. Also, winner of multiple pitching contests at SRM AP with cash prizes.",
+    highlight: "Finalist",
+    accent: "violet" as const,
+  },
+  {
+    icon: Users,
+    title: "Innovator Square Lead",
+    subtitle: "Entrepreneurship Cell @ SRM AP",
+    description: "Led and managed a thriving community - Innovator Square with 100+ members, focused on innovation and entrepreneurship.",
+    highlight: "Leadership",
+    accent: "phosphor" as const,
+  },
+  {
+    icon: Medal,
+    title: "4x Medalist",
+    subtitle: "Sports",
+    description: "Won a gold, two silver and a bronze medal at the Interschool Championship and National Sports Day events conducted by SRM University, AP!",
+    highlight: "4 Medals",
+    accent: "violet" as const,
   },
 ];
 
@@ -35,10 +60,10 @@ const RecognitionSection = () => {
       
       <div className="max-w-6xl mx-auto relative">
         {/* Section header */}
-        <div className="mb-12 text-center">
-          <div className="inline-flex items-center gap-3 mb-4 px-4 py-2 bg-secondary/50 rounded-full">
+        <div className="mb-12 text-left">
+          <div className="inline-flex items-center gap-3 mb-4">
             <Star className="w-4 h-4 text-violet" />
-            <span className="font-mono text-sm text-violet uppercase tracking-wider">Recognition @ HP</span>
+            <span className="font-mono text-sm text-violet uppercase tracking-wider">Achievements & Extracurriculars</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold">
             Internal <span className="text-gradient">High-Performance</span>

@@ -36,34 +36,26 @@ const HeroSection = () => {
 
           {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            <span className="text-gradient">Pranathi Jayanthi</span>
+            <span className="text-muted-foreground">Pranathi Jayanthi</span>
           </h1>
           
           {/* Bio */}
           <p className="text-base md:text-lg text-secondary-foreground max-w-2xl font-mono">
-            <span className="text-phosphor">Exploring Cloud Security</span>
+            <span className="text-gradient">Exploring Cloud Security</span>
+            <span className="text-emerald-300"> | </span>
+            <span className="text-emerald-300">ISC2 Certified in Cybersecurity</span>
+            <span className="text-emerald-300"> | </span>
+            <span className="text-muted-foreground">Cybersecurity Risk Assessor @HP Inc</span>
             <span className="text-muted-foreground"> | </span>
-            <span>ISC2 Certified in Cybersecurity</span>
-            <span className="text-muted-foreground"> | </span>
-            <span className="text-violet">Cybersecurity Risk Assessor @HP Inc</span>
-            <span className="text-muted-foreground"> | </span>
-            <span>B. Tech CSE - AI ML Graduate @SRM AP</span>
-            <span className="text-muted-foreground"> | </span>
-            <span className="text-phosphor">Cybersecurity</span>
-            <span className="text-muted-foreground"> | </span>
-            <span className="text-violet">AI ML</span>
-            <span className="text-muted-foreground"> | </span>
-            <span>Web Development</span>
+            <span className="text-muted-foreground">B. Tech CSE - AI ML Graduate @SRM AP</span>
+            <span className="text-gradient"> | </span>
+            <span className="text-violet">Cybersecurity</span>
+            <span className="text-violet"> | </span>
+            <span className="text-gradient">AI ML</span>
+            <span className="text-violet"> | </span>
+            <span className="text-violet">Web Development</span>
           </p>
 
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            Started in Cybersecurity through TPRM, where I developed a{' '}
-            <span className="text-phosphor font-medium">risk-first mindset</span>. Now, I'm getting back 
-            to my roots in code—applying my Python background to{' '}
-            <span className="text-violet font-medium">Cloud Security</span> and{' '}
-            <span className="text-violet font-medium">AWS</span>.{' '}
-            <span className="text-muted-foreground italic">No hype, just hands-on learning and implementation.</span>
-          </p>
 
         </div>
       </div>

@@ -2,23 +2,24 @@ import { Briefcase, GraduationCap } from 'lucide-react';
 
 const timelineItems = [
   {
-    period: "2021 - 2025",
-    title: "B.Tech CSE, AI & ML",
-    description: "Computer Science Engineering with specialization in Artificial Intelligence & Machine Learning",
+    period: "Sep 2021 - Oct 2025",
+    title: "SRM University, AP",
+    role: "Student",
+    description: "B.Tech in CSE with specialization in AI & ML",
     type: "education" as const,
   },
   {
     period: "Jan 2025 - June 2025",
-    title: "HP Internship",
-    role: "Cybersecurity Risk Assessor",
-    description: "Third-Party Risk Management and security assessments",
+    title: "HP Inc",
+    role: "Intern",
+    description: "Six month internship @ Third-Party Risk Management",
     type: "work" as const,
   },
   {
     period: "July 2025 - Present",
-    title: "HP Full-Time",
-    role: "Cybersecurity Risk Assessor",
-    description: "Continuing risk assessment and security governance",
+    title: "HP Inc",
+    role: "Full Time Employee",
+    description: "Cybersecurity Risk Assessor @ Third-Party Risk Management",
     type: "work" as const,
     current: true,
   },
@@ -35,10 +36,10 @@ const TimelineSection = () => {
         <div className="mb-10">
           <div className="flex items-center gap-3 mb-3">
             <Briefcase className="w-4 h-4 text-phosphor" />
-            <span className="font-mono text-sm text-phosphor uppercase tracking-wider">Journey</span>
+            <span className="font-mono text-sm text-gradient uppercase tracking-wider">Journey</span>
           </div>
           <h2 className="text-2xl md:text-3xl font-bold">
-            Career <span className="text-gradient">Timeline</span>
+            <span className="text-muted-foreground">Professional Background</span>
           </h2>
         </div>
 

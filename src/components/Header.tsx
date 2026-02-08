@@ -5,11 +5,10 @@ import { cn } from '@/lib/utils';
 
 const navItems = [
   { path: '/', label: 'Home' },
-  { path: '/projects', label: 'Projects' },
-  { path: '/recognition', label: 'Recognition' },
-  { path: '/certifications', label: 'Certifications' },
   { path: '/academics', label: 'Academics' },
-  { path: '/extracurriculars', label: 'Beyond' },
+  { path: '/certifications', label: 'Learning' },
+  { path: '/projects', label: 'Projects' },
+  { path: '/recognition', label: 'Achievements' },
 ];
 
 const Header = () => {
